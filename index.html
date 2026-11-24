@@ -50,7 +50,7 @@
   const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
   document.getElementById('year').textContent=new Date().getFullYear();
   function reset(){screen.scrollTop=0;last=0;holdUntil=0;atBottom=false;}
-  function select(i){active=i;img.src=`images/dna-onboarding/DNAonboarding${i}.png`;img.alt=`Ancestry DNA onboarding email design ${i}`;buttons.forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.index)===i)));reset();}
+  function select(i){active=i;img.src=`images/dna-onboarding/DNAonboarding${i}.png?v=2`;;img.alt=`Ancestry DNA onboarding email design ${i}`;buttons.forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.index)===i)));reset();}
   buttons.forEach(b=>b.addEventListener('click',()=>select(Number(b.dataset.index))));
   img.addEventListener('load',reset);
   img.addEventListener('error',()=>{document.querySelector('.note').textContent='Image not found. Check the exact filename and capitalization in images/dna-onboarding/.';});
