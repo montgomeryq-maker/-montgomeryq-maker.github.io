@@ -51,6 +51,16 @@
     .story-card{margin:0;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}.story-card img{display:block;width:100%;height:auto}.story-card figcaption{padding:13px 16px;color:var(--muted);font-size:13px}
     .stories-link{display:inline-block;margin-top:20px;color:var(--accent);font-weight:700;text-underline-offset:4px}
     @media(max-width:700px){.stories-stage{min-height:330px;padding:30px 8px}.desktop{width:92%}.desktop-frame{border-width:6px;border-bottom-width:10px}.desktop-screen{height:190px}.story-grid{grid-template-columns:1fr;gap:14px}.story-card img{max-height:480px;object-fit:contain;background:#f0f0ed}.marketing-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.marketing-gallery figure,.marketing-gallery figure:nth-child(4),.marketing-gallery figure:nth-child(5){grid-column:auto}}
+
+    /* New Content before / after */
+    .comparison-intro{max-width:780px;color:var(--muted);margin:0 0 26px}
+    .email-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;background:#e9ebe7;padding:28px;border-radius:18px}
+    .email-compare-card{min-width:0}.email-compare-card h3{font-size:19px;letter-spacing:-.03em;margin:0 0 5px}.email-compare-card p{font-size:13px;color:var(--muted);margin:0 0 15px}
+    .email-viewport{height:490px;overflow-y:auto;overscroll-behavior:contain;background:white;border:9px solid #222825;border-radius:14px;box-shadow:0 12px 24px #0002;scrollbar-width:thin}
+    .email-viewport img{display:block;width:100%;height:auto}
+    .newcontent-results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:30px 0 16px}
+    .newcontent-results div{border-top:2px solid var(--accent);padding-top:12px}.newcontent-results strong{display:block;font-size:clamp(23px,3vw,34px);letter-spacing:-.04em;color:var(--accent)}.newcontent-results span{font-size:13px;color:var(--muted)}
+    @media(max-width:700px){.email-comparison{grid-template-columns:1fr;padding:15px}.email-viewport{height:430px}.newcontent-results{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
@@ -76,11 +86,11 @@
         <div class="dna-metrics" aria-label="Reported DNA onboarding test results">
           <div class="dna-metric"><strong>+139.36%</strong><span>Click-rate lift</span></div>
           <div class="dna-metric"><strong>+28.57%</strong><span>Family history signup-rate lift</span></div>
-          <div class="dna-metric"><strong>+16.48%</strong><span>Family history GSA-rate lift</span></div>
-          <div class="dna-metric"><strong>+17.58%</strong><span>Overall GSA-rate lift</span></div>
+          <div class="dna-metric"><strong>+16.48%</strong><span>Family History Gross Subscriber Additions rate lift</span></div>
+          <div class="dna-metric"><strong>+17.58%</strong><span>Overall Gross Subscriber Additions rate lift</span></div>
         </div>
         <p><strong style="color:var(--ink)">30% lower email unsubscribe rate</strong> was also reported in the test.</p>
-        <p style="font-size:13px">Reported team test results; not individually attributed. GSA is retained from the original campaign reporting. These outcomes measure engagement and conversion signals, not proven long-term cross-selling.</p>
+        <p style="font-size:13px">Reported team test results; not individually attributed. GSA stands for Gross Subscriber Additions. These outcomes measure engagement and conversion signals, not proven long-term cross-selling.</p>
       </div>
     </section>
 
@@ -114,7 +124,24 @@
       </div></div>
       <a class="stories-link" href="https://www.ancestry.com/stories-of-us" target="_blank" rel="noopener noreferrer">Visit the Stories of US website ↗</a>
     </section>
-    <section aria-label="More portfolio projects"><div class="eyebrow">More work / Coming soon</div><div class="projects-next"><div class="tile"><h3>New Content Email Redesign</h3><p>Ancestry / Lifecycle marketing</p></div><div class="tile"><h3>Winback Campaign</h3><p>Ancestry / Promotional marketing</p></div><div class="tile"><h3>Jive Brand Identity</h3><p>Branding / Creative leadership</p></div></div></section>
+    <section id="new-content" class="project" aria-labelledby="newcontent-title">
+      <div class="project-head"><div><div class="eyebrow">Featured work / Ancestry</div><h2 id="newcontent-title">New Content Email Redesign</h2><p>Less clutter. Clearer messaging. Better results.</p></div><div class="stat">+66% unique clicks*</div></div>
+      <p class="comparison-intro">Ancestry's original New Content emails could contain up to eight content blocks, sometimes without a clear primary call to action. I personally redesigned the emails with simpler layouts, stronger visual hierarchy, and clearer calls to action to make new family history content easier to explore.</p>
+      <div class="email-comparison" aria-label="Before and after New Content email redesign">
+        <div class="email-compare-card"><h3>Before / Original email</h3><p>Existing email experience</p><div class="email-viewport" tabindex="0" aria-label="Scroll through original email"><img src="images/new-content/Old-NewContent.png" alt="Original Ancestry New Content email before redesign" loading="lazy"></div></div>
+        <div class="email-compare-card"><h3>After / My redesign</h3><p>Simplified email with clearer calls to action</p><div class="email-viewport" tabindex="0" aria-label="Scroll through redesigned email"><img src="images/new-content/NewContent.jpg" alt="Ancestry New Content email redesigned by Paul Browning" loading="lazy"></div></div>
+      </div>
+      <div class="story-section"><h3>Results &amp; impact</h3><p>The redesigned emails were tested against the original experience, producing stronger engagement and subscriber acquisition results.</p></div>
+      <div class="newcontent-results" aria-label="Reported New Content email test results">
+        <div><strong>+66%</strong><span>Unique clicks</span></div>
+        <div><strong>+41%</strong><span>Gross Subscriber Additions + reactivations</span></div>
+        <div><strong>+66%</strong><span>Signup quantity</span></div>
+        <div><strong>1.65% → 2.74%</strong><span>Click-through rate</span></div>
+      </div>
+      <p class="note" style="text-align:left">*Reported results from the team's email test; not individually attributed. The team recommended expanding the redesign to global audiences.</p>
+    </section>
+
+    <section aria-label="More portfolio projects"><div class="eyebrow">More work / Coming soon</div><div class="projects-next"><div class="tile"><h3>Winback Campaign</h3><p>Ancestry / Promotional marketing</p></div><div class="tile"><h3>Jive Brand Identity</h3><p>Branding / Creative leadership</p></div></div></section>
   </main>
   <footer>© <span id="year"></span> Paul Browning · <a href="https://www.behance.net/montgomeryq" target="_blank" rel="noopener noreferrer">View Behance portfolio</a></footer>
 </div>
